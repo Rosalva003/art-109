@@ -1,6 +1,6 @@
 {
   "liveServer.settings.root": "/",
-  "liveServer.settings.port": 5500,
+  "liveServer.settings.port": 5501,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "editor.formatOnSave": true,
