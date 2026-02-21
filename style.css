@@ -1,0 +1,118 @@
+/* CSS resets   */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences  */
+html {
+    font-size: 100%;
+}
+
+
+
+/* General CSS  */
+
+
+body {
+    background-color: #f8ccd9;
+    font-family: monospace;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+header {
+    padding: 6rem;
+    margin-bottom: 3rem;
+    background-color: #f3aac0;
+    color: #f8ccd9;
+    /* text-align: center; */
+
+}
+
+header h1 {
+    font-size: 3rem;
+    top: 5rem;
+}
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8ccd9;
+    display: inline-block margin: 0 1 rem;
+    background-color: #f3aac0;
+
+}
+
+main {
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-bottom: 5rem;
+}
+
+.about-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+    padding: 2rem 0;
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: #f3aac0;
+    padding: 4rem;
+    text-align: justify;
+    border: 2px #f3aac0 solid;
+    border-radius: .5rem;
+    box-shadow: 10px 10px 5px #e68bbe
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: .5rem;
+
+}
+
+.about-section {
+    background-color: ;
+}
+
+footer {
+    background-color: #f3aac0;
+    color: #f8ccd9;
+    padding: 1.2rem;
+    text-align: align;
+}
+
+footer p {
+    font-size: 1rem;
+}
