@@ -1,0 +1,218 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ color palette  */
+
+/*
+
+
+:root {
+--bg-color-1: #f8ccd9;
+--bg-color-2: #f3aac0;
+--font: #D45FA1;
+--accent-1: #e68bbe;
+--accent-2: #e68bbe;
+--dark:
+}
+
+
+
+
+
+
+/*
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CSS resets */ 
+/* CSS resets   */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences  */
+html {
+    font-size: 100%;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General CSS  */
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f8ccd9;
+    color:#d45ea1;
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+        text-align: justify;
+}
+
+
+@media 
+(max-width: 700px) {
+    body {
+        font-size: 1.3rem;
+    }
+}
+
+header {
+    padding: 6rem;
+    margin-bottom: 3rem;
+    background-color: #f3aac0;
+    color: #f8ccd9;
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    /* text-align: center; */
+
+}
+
+
+header h1 {
+    font-size: 3rem;
+    top: 5rem;
+}
+
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8ccd9;
+    display: inline-block; margin: 0 1rem;
+    background-color: #f3aac0;
+transition: all .5s ease;
+}
+
+
+nav a:hover {
+    background-color:#e68bbe; 
+    /* transform: scale(1.3); */
+}
+
+@media (max-width: 750px) {
+    nav a {
+        margin: 0 .5rem;
+    }
+ }
+
+
+main {
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+main {
+    margin:0;
+}
+
+@media (max-width:850px) {
+    main {
+        margin: 2rem;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    main{
+        margin: 1rem; 
+    }
+}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-bottom: 5rem;
+}
+
+.about-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+    padding: 2rem 0;
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: #f3aac0;
+    padding: 4rem;
+    border: 2px #f3aac0 solid;
+    border-radius: .5rem;
+    box-shadow: 10px 10px 5px #e68bbe
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 800px){
+    .portfolio-item {
+        padding: 3rem;
+    }
+}
+@media (max-width: 650px){
+    .portfolio-item {
+        padding: 2rem;
+    }
+}
+
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: .5rem;
+
+}
+
+.about-section {
+    background-color: ;
+}
+
+footer {
+    background-color: #f3aac0;
+    color: #f8ccd9;
+    padding: 1.2rem;
+    text-align: align;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+/* style classes  */
+
+.accent-1{
+    color:#e68bbe;
+}
+
+.accent-2 {
+    color:#e68bbe;
+
+}
+
+
+
