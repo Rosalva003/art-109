@@ -1,0 +1,11 @@
+{
+  "liveServer.settings.root": "/",
+  "liveServer.settings.port": 5500,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
