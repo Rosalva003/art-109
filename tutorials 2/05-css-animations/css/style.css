@@ -1,0 +1,111 @@
+
+body{
+    animation: change-color 4s infinite alternate;
+    background-color: lightgray;
+}
+
+@keyframes change-color{
+    0% {background-color:lightblue;} 
+    50% {background-color:lightgreen;}
+    100% {background-color:lightpink;}
+}
+.title {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(30deg, 20deg);}
+}
+
+.square {
+    background-color: hotpink;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    animation: myAnimation 2s infinite alternate;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: lightblue;
+    transform: rotate(30deg);
+
+} 
+
+.button-div{
+    text-align: center;
+}
+
+.button {
+    color:white;
+     background-color: brown;
+     padding: 15px;
+     border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+     
+}
+.button:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    transform: scale(1.5);
+}
+
+
+.loading{
+    background-color: hotpink;
+    animation: stretch 5s 3 normal;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {width: 100px;}
+    100% {width: 80vw;}
+}
+@keyframes myAnimation {
+  0% {background-color: red;}
+  100% {background-color: yellow;}
+}
+
+.ball {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background: #cc0000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: myAnimation 5s infinite alternate;
+  transition: transform 1s;
+}
+.ball:hover {
+  transform: translate(300px, 300px);
+}
+
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 129, 11);
+  position: relative;
+  animation: pulseContainer 2s infinite ease-in-out;
+}
+
+@keyframes pulseContainer {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
