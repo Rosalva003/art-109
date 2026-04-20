@@ -1,0 +1,123 @@
+
+body {
+    background-color: #020408;
+    margin :0;
+    padding: 0;
+   height: 100vh;
+    overflow: hidden;
+}
+/* 1. Style the stars (nodes) */
+.node {
+    width: 6x;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px white; /* Add a glow effect */
+}  
+/* 2. Monitor Overlay  */
+    #monitor-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+        pointer-events: none; /* Allow clicks to pass through */
+}
+/* THE EYESHAPE */
+.eye-white {
+    width: 250px;
+    height: 150px;
+    background: #e0e0e0;
+    border-radius: 100% 0%; /* Makes it sharp 'cat-eye' shape */
+    transform: rotate(45deg);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #333;
+    cursor: pointer;
+    overflow: hidden;
+   
+}
+    .eye-white:hover .pupil {
+       transform: rotate(-45deg) translate(10px, 10px); /* Move the pupil slightly to the right and down */
+       transform: tranform 0.3s ease; /* Smooth transition for the movement */
+}
+/* THE PUPIL */
+.pupil{
+    width: 80px; /* Make it a perfect circle */
+    height: 80px; /* Make it a perfect circle */
+    background-color: #000000; /* This makes it solid black */
+    border-radius: 50%; 
+    border: 4px solid #333; /* This adds a sliight metallic rim to the 'lens' */
+    position: relative; 
+    transform: rotate(-45deg); 
+    z-index: 10;
+    display: flex; /* Helps center the red dot */
+    justify-content: center; 
+    align-items: center;
+}
+/* THE RED RECODRING LIGHT */
+.recording-dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    box-shadow: 0 0 10px red; /* This makes it look like it's glowing */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* THE HIDDEN MESSAGE */
+#warning{
+    color:#00ff41;
+    font-family: monospace;
+    text-align: center;
+    display: none; /* Hidden by default */
+
+}
+
+.scanner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Made it a bit thicker to be more visible */
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.8), transparent); /* Green gradient */
+    z-index: 9999; /* Ensure it stays on top of everything */
+    animation: move-scanner 3s linear infinite;
+}
+
+/*This is the new green flicker effect*/
+  #monitor-overlay.active {
+    background-color: rgba(0, 255, 65, 0.2); 
+    animation:flicker 0.1s infinite; /* Add a flickering effect */
+    pointer-events:none;
+}
+
+@keyframes move-scanner {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.0; }
+
+}   
+
+#monitor-overlay.active {
+    background-color: rgba(0, 255, 65, 0.2); 
+    animation:flicker 0.1s infinite; /* Add a flickering effect */
+    pointer-events:none;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.2; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.2; }
+}

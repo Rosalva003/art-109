@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Net Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id=" monitor-overlay"></div>
+
+     <div class="scanner"></div> 
+
+     <div class="eye-white" onclick="revealMessage()">
+        <div class="pupil">
+            <div class="recording-dot"></div>
+        </div>
+     </div>
+
+   <div id="warning" style="display: none; color: red; font-size: 2em; text-align: center; margin-top: 20px;">
+       <p> LOGGING_START: [2026-04-17]</p> 
+        <p> USER_ACTIVITY: OBSERVED </p> 
+        <p> EYE_CONTACT: ESTABLISHED</p>
+        <p>ENCRYPTING_DATA...DONE.</p>
+
+    <div style="text-align:center; margin-top: top 30px;">
+        <input type="text" id="confession" placeholder=" TYPE YOUR SECRET HERE..."
+        oninput="glitchEffect()"
+        style="background:black;color: #00ff41; border: 1px solid #00ff41; padding: 10px; font-family:'Courier New', Courier, monospace;width:300px;">
+    </div>
+
+     <script>
+        function revealMessage() {
+            // Show the text
+            document.getElementById('warning').style.display = 'block';
+
+           // Turn on the green flicker by adding the "active" class to the eye
+            document.getElementById('monitor-overlay').classList.add('active');
+        }
+    </script>
+</body>
