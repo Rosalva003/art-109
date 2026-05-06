@@ -85,9 +85,9 @@ main {
     background-color: #f3aac0;
     padding: 4rem;
     text-align: justify;
-    border: 2px #f3aac0 solid;
+    border: none;
     border-radius: .5rem;
-    box-shadow: 10px 10px 5px #e68bbe
+    box-shadow: none;
 }
 
 .portfolio-item h3 {
@@ -119,4 +119,18 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+/* remove pink grid/border styling from works page */
+.portfolio-grid {
+    background: none;
+    border: none;
+}.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: #f3aac0;
+    padding: 4rem;
+    text-align: justify;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: none;
 }

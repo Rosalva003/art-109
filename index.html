@@ -3,11 +3,92 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rosalva's Portfolio</title>
-        <!-- Redirect to the main portfolio page in the repo -->
-        <meta http-equiv="refresh" content="0; url=images/index.html">
+        <title>It's OK to Feel</title>
+        <link rel="stylesheet" href="css/mental-health.css">
     </head>
     <body>
-        <p>Redirecting to <a href="images/index.html">my portfolio</a>…</p>
+        <header class="site-header">
+            <a class="logo" href="#top">It's OK</a>
+            <nav aria-label="Main navigation">
+                <a href="#grounding">Grounding</a>
+                <a href="#care">Care</a>
+                <a href="#support">Support</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-text">
+                    <p class="eyebrow">A gentle mental health page</p>
+                    <h1 id="hero-title">It is okay to feel messy.</h1>
+                    <p class="intro">Some thoughts arrive like scribbles. Some days are slow, heavy, or hard to explain. This page is a little sketchbook pause for breathing, checking in, and remembering that you are still worthy of care.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#grounding">Take a pause</a>
+                        <a class="button secondary" href="#support">Find support</a>
+                    </div>
+                </div>
+                <figure class="hero-art">
+                    <img src="images/Itsok.png" alt="Illustration of a person surrounded by bright, tangled thoughts">
+                    <figcaption>It is okay when your mind feels busy.</figcaption>
+                </figure>
+            </section>
+
+            <section class="statement" aria-label="Mental health reminder">
+                <p>Rest is allowed. Tears are allowed. Asking for help is allowed.</p>
+            </section>
+
+            <section class="section split" id="grounding">
+                <div>
+                    <p class="eyebrow">Grounding</p>
+                    <h2>A tiny reset for right now</h2>
+                    <p>When thoughts feel too loud, small physical details can help bring attention back to the present moment. Go slowly. There is no grade for this.</p>
+                </div>
+                <ol class="grounding-list">
+                    <li><span>5</span> things you can see</li>
+                    <li><span>4</span> things you can feel</li>
+                    <li><span>3</span> things you can hear</li>
+                    <li><span>2</span> things you can smell</li>
+                    <li><span>1</span> kind thing to tell yourself</li>
+                </ol>
+            </section>
+
+            <section class="section" id="care">
+                <div class="section-heading">
+                    <p class="eyebrow">Everyday Care</p>
+                    <h2>Small care for a tired mind</h2>
+                </div>
+                <div class="care-grid">
+                    <article>
+                        <h3>Drink Water</h3>
+                        <p>A basic need can be a loving check-in with your body.</p>
+                    </article>
+                    <article>
+                        <h3>Step Outside</h3>
+                        <p>Fresh air, light, or a short walk can change the shape of a moment.</p>
+                    </article>
+                    <article>
+                        <h3>Text Someone</h3>
+                        <p>A simple "can you talk?" can open the door to feeling less alone.</p>
+                    </article>
+                    <article>
+                        <h3>Lower the Bar</h3>
+                        <p>Doing one small thing still counts, especially on heavy days.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section support" id="support">
+                <div>
+                    <p class="eyebrow">Support</p>
+                    <h2>Help is available</h2>
+                    <p>If you or someone you know is struggling or in crisis in the United States, call or text <strong>988</strong>, or chat at <a href="https://988lifeline.org/get-help/">988lifeline.org</a>. The 988 Lifeline offers free, confidential support 24/7.</p>
+                </div>
+                <a class="button primary" href="https://988lifeline.org/get-help/">Visit 988 Lifeline</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made as a reminder to be gentle with yourself.</p>
+        </footer>
     </body>
 </html>
