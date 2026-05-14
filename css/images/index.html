@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosalva's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="hamburger.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#about-section">About</a>
-            <a href="#portfolio-section">Work</a>
-            <a href="#contact-section">Contact</a>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Rosalva Jimenez Martinez ᯓ★</h1>
+            </div>
+            <div class="nav-wrapper">
+                <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#portfolio-section">Work</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1>Rosalva Jimenez Martinez ᯓ★</h1>
+
     </header>
     <main>
         <section class="about-section" id="about-section">
             <div class="about-content">
-                <h2><span class= "accent-1">★</span>About Me</h2>
+                <h2><span class="accent-1">★</span>About Me</h2>
                 <p>Hi, I am Rosalva. I create vibrant digital work inspired by perspective, emotion, and self-discovery.
                     Stars follow me from piece to piece as symbols of wonder and becoming. My practice is about growth,
                     color, and building a world that feels uniquely mine ⭑.ᐟ </p>
@@ -28,26 +37,55 @@
         </section>
         <section class="portfolio-section" id="portfolio-section">
             <div class="portfolio-content">
-                <h2><span class= "accent-1">★</span> My Work</h2>
-                <div class="portfolio-item">
-                    <img src="images/3d.jpg" alt="Project using 3d modeling">
-                    <h3> Y2K 3D Modeling </h3>
-                    <p> My first time working with 3D modeling, very much content with the outcome</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/eyes.jpg" alt="This was just a fun artwork I created on Procreate">
-                    <h3> Starstrucked </h3>
-                    <p> experimenting with digital illustration</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/reflection.jpg" alt=" When I began getting comfortable with my art style">
-                    <h3> Reflection </h3>
-                    <p> I tend to focused more on personal reflection expressing it through my artwork</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/self-portrait.jpg" alt="self portrait of me">
-                    <h3> Digital Self</h3>
-                    <p> My first time making a Self-portrait of myself</p>
+
+                <h2><span class="accent-1">★</span> My Work</h2>
+                <div class="portfolio-grid flex-container-grid">
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="3d.jpg" target="_blank"><img src="3d.jpg" alt="Project using 3D modeling"></a>
+                        <h3>3D Modeling</h3>
+                        <p>I love the aesthetic of this piece and feel proud of how it turned out.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="eyes.jpg" target="_blank"><img src="eyes.jpg"
+                                alt="Digital illustration of eyes with stars"></a>
+                        <h3>Starstruck</h3>
+                        <p>An experiment with digital illustration, expression, and dreamy details.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="Reflection.jpg" target="_blank"><img src="Reflection.jpg"
+                                alt="Reflective digital artwork exploring personal style"></a>
+                        <h3>Reflection</h3>
+                        <p>This piece helped me become more comfortable with my art style and personal expression.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="self-portrait.jpg" target="_blank"><img src="self-portrait.jpg"
+                                alt="Digital self portrait"></a>
+                        <h3>Digital Self</h3>
+                        <p>My first digital self-portrait, focused on identity and self-discovery.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="eyes.jpg" target="_blank"><img src="eyes.jpg"
+                                alt="Digital illustration of eyes with stars"></a>
+                        <h3>Starstruck</h3>
+                        <p>An experiment with digital illustration, expression, and dreamy details.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="Reflection.jpg" target="_blank"><img src="Reflection.jpg"
+                                alt="Reflective digital artwork exploring personal style"></a>
+                        <h3>Reflection</h3>
+                        <p>This piece helped me become more comfortable with my art style and personal expression.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="3d.jpg" target="_blank"><img src="3d.jpg" alt="Project using 3D modeling"></a>
+                        <h3>3D Modeling</h3>
+                        <p>I love the aesthetic of this piece and feel proud of how it turned out.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="Reflection.jpg" target="_blank"><img src="Reflection.jpg"
+                                alt="Reflective digital artwork exploring personal style"></a>
+                        <h3>Reflection</h3>
+                        <p>This piece helped me become more comfortable with my art style and personal expression.</p>
+                    </div>
                 </div>
             </div>
 
@@ -60,9 +98,13 @@
         </section>
 
     </main>
-    <footer>
-        <p>&copy2025 Rosalva Jimenez Martinez</p>
-
+    <footer class="flex-container">
+        <p>&copy; 2025 Rosalva Jimenez Martinez</p>
+        <div class="social-links">
+            <a href="#"><img src="icon-logo-instagram.png" alt=""></a>
+            <a href="#"><img src="icon-logo-twitter.png" alt=""></a>
+            <a href="#"><img src="icon-logo-youtube.png" alt=""></a>
+        </div>
     </footer>
 </body>
 
