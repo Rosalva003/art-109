@@ -47,19 +47,12 @@ body {
 }
 
 .site-header {
+    gap: 1.5rem;
     padding: 2rem;
     min-height: 18rem;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 100%;
-}
-
-.nav-brand h1 {
+header h1 {
     max-width: none;
     font-size: clamp(1.5rem, 3vw, 2.4rem);
     line-height: 1.05;
@@ -70,37 +63,12 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
-}
-
-.nav-wrapper {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.hamburger {
-    display: none;
-    background-color: transparent;
-    border: 2px solid rgba(255, 253, 253, 0.7);
-    border-radius: 999px;
-    padding: 0.25rem 0.75rem;
-    color: var(--paper);
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.nav-menu {
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 0.75rem;
-    list-style: none;
 }
 
 nav a {
-    display: inline-block;
     border: 2px solid rgba(255, 253, 253, 0.7);
     border-radius: 999px;
     padding: 0.35rem 0.8rem;
@@ -116,21 +84,38 @@ nav a {
     color: var(--bg-color-1);
     transform: translateY(-2px);
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+
+}
+
+.nav-menu {
+    list-style: none;
+}
 
 main{
     margin:0;
 }
 
 @media (max-width: 1030px) {
-    .navbar {
+    .site-header {
+        align-items: flex-start;
         gap: 1rem;
-        justify-content: center;
     }
 
-    .nav-brand h1 {
+    header h1 {
         white-space: normal;
         text-align: center;
         margin-bottom: 3rem;
+    }
+
+    nav {
+        justify-content: center;
     }
 }
 
@@ -196,7 +181,7 @@ main {
 .portfolio-item h3 {
     margin-top: 1rem;
     color: var(--bg-color-1);
-    font-size: 1.4rem;
+    font-size: 1.4 rem;
 }
 
 .portfolio-item p {
@@ -247,34 +232,11 @@ footer img {
         flex-direction: column;
     }
 
-    .navbar {
-        align-items: flex-start;
-        flex-direction: row;
+    nav {
+        justify-content: flex-start;
     }
 
-    .nav-wrapper {
-        align-items: flex-end;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hamburger {
-        display: inline-block;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 0.5rem;
-        margin-top: 0.75rem;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-brand h1 {
+    header h1 {
         white-space: normal;
     }
 
