@@ -1,23 +1,54 @@
-<div id="desktop">
-    <div class="book-container">
-        <div class="book-spine"></div>
-        <link rel="stylesheet" href="style.css">
-        
-        <div class="page left-page">
-            <h2 class="page-title">Digital Burn Book</h2>
-            <p class="instruction">Write your thoughts, then let them dissolve...</p>
-            <textarea id="entry-area" placeholder="Start typing here..."></textarea>
-            <div class="button-wrapper">
-                <button id="burn-button">BURN ENTRY</button>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Burn Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="dark-mode-btn" class="theme-btn dark-btn">Dark</button>
+        <button id="light-mode-btn" class="theme-btn light-btn">Light</button>
+    </div>
 
-        <div class="page right-page">
-            <div class="decoration-area">
-                <div class="sticker-space">
-                    <p class="handwritten"></p>
+    <div id="desktop">
+        <div class="book-container" id="book-container">
+            <div class="book-spine"></div>
+
+            <div class="page left-page">
+                <div class="page-header">
+                    <img src="doodles3.png" alt="Notebook Header Doodles">
+                </div>
+
+                <textarea id="entry-area" placeholder="Type down your thoughts here..."></textarea>
+
+                <div class="button-wrapper">
+                    <button id="burn-button">BURN ENTRY</button>
+                </div>
+
+                <div class="particle-stage" id="particle-stage"></div>
+            </div>
+
+            <div class="page right-page" id="right-page">
+                <div class="decoration-area">
+                    <div class="sticker-space">
+                        <div class="paperclip"></div>
+
+                        <div class="notebook-doodle">
+                            <img src="notebookdoodles.png" alt="Notebook Doodles">
+                        </div>
+
+                        <div class="finals-message">
+                            Good Luck With Finals!!!
+                        </div>
+
+                        <div class="finals-handwriting">
+                            You got this! 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <script src="script.js"></script>
