@@ -31,6 +31,7 @@ header {
     margin-bottom: 3rem;
     background-color: #f3aac0;
     color: #f8ccd9;
+    position: relative;
     /* text-align: center; */
 
 }
@@ -43,10 +44,29 @@ header h1 {
     letter-spacing: 0.03em;
 }
 
-nav {
+/* p5 header canvas container */
+#p5-header {
     position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* ensure header content is above the canvas */
+header h1,
+header nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* header layout */
+
+nav {
+    position: fixed;
     right: 2rem;
     top: 2rem;
+    z-index: 1000;
 }
 
 nav a {
