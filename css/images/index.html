@@ -7,6 +7,7 @@
     <title>Rosalva's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="hamburger.js" defer></script>
+    <script src="work-lightbox.js" defer></script>
 </head>
 
 <body>
@@ -41,48 +42,66 @@
                 <h2><span class="accent-1">★</span> My Work</h2>
                 <div class="portfolio-grid flex-container-grid">
                     <div class="portfolio-item flex-item-grid">
-                        <a href="3d.jpg" target="_blank"><img src="3d.jpg" alt="Project using 3D modeling"></a>
+                        <button type="button" class="work-trigger" data-src="3d.jpg"
+                            data-caption="3D Modeling" aria-label="View 3D Modeling">
+                            <img src="3d.jpg" alt="Project using 3D modeling">
+                        </button>
                         <h3>3D Modeling</h3>
                         <p>I love the aesthetic of this piece and feel proud of how it turned out.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="eyes.jpg" target="_blank"><img src="eyes.jpg"
-                                alt="Digital illustration of eyes with stars"></a>
+                        <button type="button" class="work-trigger" data-src="eyes.jpg"
+                            data-caption="Starstruck" aria-label="View Starstruck">
+                            <img src="eyes.jpg" alt="Digital illustration of eyes with stars">
+                        </button>
                         <h3>Starstruck</h3>
                         <p>An experiment with digital illustration, expression, and dreamy details.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="Reflection.jpg" target="_blank"><img src="Reflection.jpg"
-                                alt="Reflective digital artwork exploring personal style"></a>
+                        <button type="button" class="work-trigger" data-src="Reflection.jpg"
+                            data-caption="Reflection" aria-label="View Reflection">
+                            <img src="Reflection.jpg" alt="Reflective digital artwork exploring personal style">
+                        </button>
                         <h3>Reflection</h3>
                         <p>This piece helped me become more comfortable with my art style and personal expression.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="self-portrait.jpg" target="_blank"><img src="self-portrait.jpg"
-                                alt="Digital self portrait"></a>
+                        <button type="button" class="work-trigger" data-src="self-portrait.jpg"
+                            data-caption="Digital Self" aria-label="View Digital Self">
+                            <img src="self-portrait.jpg" alt="Digital self portrait">
+                        </button>
                         <h3>Digital Self</h3>
                         <p>My first digital self-portrait, focused on identity and self-discovery.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="eyes.jpg" target="_blank"><img src="eyes.jpg"
-                                alt="Digital illustration of eyes with stars"></a>
+                        <button type="button" class="work-trigger" data-src="eyes.jpg"
+                            data-caption="Starstruck" aria-label="View Starstruck">
+                            <img src="eyes.jpg" alt="Digital illustration of eyes with stars">
+                        </button>
                         <h3>Starstruck</h3>
                         <p>An experiment with digital illustration, expression, and dreamy details.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="Reflection.jpg" target="_blank"><img src="Reflection.jpg"
-                                alt="Reflective digital artwork exploring personal style"></a>
+                        <button type="button" class="work-trigger" data-src="Reflection.jpg"
+                            data-caption="Reflection" aria-label="View Reflection">
+                            <img src="Reflection.jpg" alt="Reflective digital artwork exploring personal style">
+                        </button>
                         <h3>Reflection</h3>
                         <p>This piece helped me become more comfortable with my art style and personal expression.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="3d.jpg" target="_blank"><img src="3d.jpg" alt="Project using 3D modeling"></a>
+                        <button type="button" class="work-trigger" data-src="3d.jpg"
+                            data-caption="3D Modeling" aria-label="View 3D Modeling">
+                            <img src="3d.jpg" alt="Project using 3D modeling">
+                        </button>
                         <h3>3D Modeling</h3>
                         <p>I love the aesthetic of this piece and feel proud of how it turned out.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="Reflection.jpg" target="_blank"><img src="Reflection.jpg"
-                                alt="Reflective digital artwork exploring personal style"></a>
+                        <button type="button" class="work-trigger" data-src="Reflection.jpg"
+                            data-caption="Reflection" aria-label="View Reflection">
+                            <img src="Reflection.jpg" alt="Reflective digital artwork exploring personal style">
+                        </button>
                         <h3>Reflection</h3>
                         <p>This piece helped me become more comfortable with my art style and personal expression.</p>
                     </div>
@@ -106,6 +125,17 @@
             <a href="#"><img src="icon-logo-youtube.png" alt=""></a>
         </div>
     </footer>
+
+    <div class="work-lightbox" id="work-lightbox" hidden>
+        <button type="button" class="work-lightbox__backdrop" aria-label="Close enlarged view"></button>
+        <div class="work-lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="work-lightbox-caption">
+            <button type="button" class="work-lightbox__close" aria-label="Close">×</button>
+            <figure class="work-lightbox__figure">
+                <img class="work-lightbox__img" id="work-lightbox-img" src="" alt="">
+                <figcaption class="work-lightbox__caption" id="work-lightbox-caption"></figcaption>
+            </figure>
+        </div>
+    </div>
 </body>
 
 </html>
