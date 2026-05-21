@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Memes Website</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .gif-container {
+            text-align: center;
+            display: flex;
+            gap: 20px; /* Adds space between the two GIFs */
+            flex-wrap: wrap; /* Allows them to stack on smaller screens */
+            justify-content: center;
+        }
+        img {
+            max-width: 10%;
+            height: auto;
+            max-height: 400px; /* Keeps them a uniform, manageable size */
+            display : flex;
+        }
+    </style>
+</head>
+<body>
+<div class="gif-container">
+    <h1>Welcome to the Cat Memes Website!
+        yayyyyyyyaysyayyyyyyyyyyyyyyyyyyyyy
+    </h1>
+    <div class="gif-container">
+    <h1>Welcome to the Cat Memes Website!</h1>
+    <img src="media/Cat Meme GIF.gif" alt="Looping Cat Meme">
+
+    <img src="media/Cat Meme GIF.gif" alt="Looping Cat Meme">
+    
+    <img id="right-cat" src="media/In Love Cat GIF.gif" alt="In Love Cat">
+    <video id="webcam" autoplay playsinline></video>
+</div>
+    
+    </div>
+<script>
+        const video = document.getElementById('webcam');
+
+        // Request permission to use the webcam
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function(error) {
+                    console.log("Something went wrong with the webcam:", error);
+                });
+        }
+    </script>
+</body>
+</body>
+</html>
