@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosalva's Work</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <title>Rosalva's Work (copy)</title>
+    <link rel="stylesheet" href="../portfolio/style.css?v=3">
 </head>
 
 <body class="works-page">
@@ -35,19 +35,19 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-item its-ok-item">
                         <div class="paired-work-layout">
-                            <a href="work-its-ok.html">
-                                <img src="Itsok.jpg" alt="It's ok digital artwork">
+                            <a href="../portfolio/work-its-ok.html">
+                                <img src="../portfolio/Itsok.jpg" alt="It's ok digital artwork">
                             </a>
-                            <a href="work-its-ok.html">
-                                <img src="thinking.png" alt="Thinking digital artwork">
+                            <a href="../portfolio/work-its-ok.html">
+                                <img src="../portfolio/thinking.png" alt="Thinking digital artwork">
                             </a>
                         </div>
                         <h3>It's Ok</h3>
                         <p>A sneak peek of a project very close to my heart. With finals season in full swing, I wanted to visualize the mental load we all carry. This series is a reminder to breathe, slow down the "system," and focus on just one thing at a time.</p>
                     </div>
                     <div class="portfolio-item featured-work">
-                        <a href="work-behind-the-screen.html">
-                            <img src="Behindthescreen.png" alt="Behind the Screen digital artwork">
+                        <a href="../portfolio/work-behind-the-screen.html">
+                            <img src="../portfolio/Behindthescreen.png" alt="Behind the Screen digital artwork">
                         </a>
                         <h3>Behind The Screen</h3>
                         <p>Behind The Screen, 2026. Explores digital privacy and survelliance through an "uncomfortable" interactive interface. <a href="https://rosalvaj444-ctrl.github.io/net-art/">View website</a></p>
@@ -59,22 +59,22 @@
                 <p class="works-note">Many of these artworks are created in Procreate.</p>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <a href="work-reflection.html">
-                            <img src="reflection.jpg" alt="When I began getting comfortable with my art style">
+                        <a href="../portfolio/work-reflection.html">
+                            <img src="../portfolio/reflection.jpg" alt="When I began getting comfortable with my art style">
                         </a>
                         <h3>Reflection</h3>
                         <p>I tend to focus more on personal reflection, expressing it through my artwork.</p>
                     </div>
                     <div class="portfolio-item">
-                        <a href="work-digital-self.html">
-                            <img src="self-portrait.jpg" alt="Self portrait of me">
+                        <a href="../portfolio/work-digital-self.html">
+                            <img src="../portfolio/self-portrait.jpg" alt="Self portrait of me">
                         </a>
                         <h3>Digital Self</h3>
                         <p>Rather than a literal portrait, I wanted to capture how I perceive my own energy and identity in a digital space.</p>
                     </div>
                     <div class="portfolio-item pink-girl-item">
-                        <a href="work-pink-girl.html">
-                            <img src="pinkgirl.jpg" alt="Pink girl digital artwork">
+                        <a href="../portfolio/work-pink-girl.html">
+                            <img src="../portfolio/pinkgirl.jpg" alt="Pink girl digital artwork">
                         </a>
                         <h3>Pink Girl</h3>
                         <p>Just a fun quick sketch.</p>
@@ -87,11 +87,11 @@
                         <p>An experiment with digital illustration, capturing the eyes in my artstyle. 
                             (work is compressed, therefore no movement)</p>
                         <div class="starstrucked-layout">
-                            <a href="work-starstrucked.html">
-                                <img src="stareyes.jpg" alt="Animated star eyes graphic">
+                            <a href="../portfolio/work-starstrucked.html">
+                                <img src="../portfolio/stareyes.jpg" alt="Animated star eyes graphic">
                             </a>
-                            <a href="work-starstrucked.html">
-                                <img src="eyes.jpg" alt="Starstrucked digital artwork">
+                            <a href="../portfolio/work-starstrucked.html">
+                                <img src="../portfolio/eyes.jpg" alt="Starstrucked digital artwork">
                             </a>
                             
                         </div>
@@ -101,11 +101,11 @@
                          <h3>Bunnies</h3>
                          <p>An experiment with digital illustration,and dreamy details.</p>
                         <div class="bunny-layout">
-                            <a href="work-bunnies.html">
-                                <img src="bunny.jpg" alt="Animated bunny graphic">
+                            <a href="../portfolio/work-bunnies.html">
+                                <img src="../portfolio/bunny.jpg" alt="Animated bunny graphic">
                             </a>
-                            <a href="work-bunnies.html">
-                                <img src="bunny2.jpg" alt="Second animated bunny graphic">
+                            <a href="../portfolio/work-bunnies.html">
+                                <img src="../portfolio/bunny2.jpg" alt="Second animated bunny graphic">
                             </a>
                         </div>
                     </div>
@@ -137,59 +137,6 @@
         </div>
         <p>&copy2025 Rosalva Jimenez Martinez</p>
     </footer>
-    <!-- Lightbox modal -->
-    <div id="lightbox" aria-hidden="true">
-        <div class="lightbox-inner" role="dialog" aria-modal="true">
-            <button class="lightbox-close" aria-label="Close">×</button>
-            <img id="lightbox-img" src="" alt="">
-            <p id="lightbox-caption"></p>
-        </div>
-    </div>
-
-    <script>
-        (function(){
-            const lightbox = document.getElementById('lightbox');
-            const lbImg = document.getElementById('lightbox-img');
-            const lbCaption = document.getElementById('lightbox-caption');
-            const closeBtn = document.querySelector('.lightbox-close');
-
-            function openLightbox(src, alt) {
-                lbImg.src = src;
-                lbImg.alt = alt || '';
-                lbCaption.textContent = alt || '';
-                lightbox.classList.add('open');
-                lightbox.setAttribute('aria-hidden', 'false');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeLightbox() {
-                lightbox.classList.remove('open');
-                lightbox.setAttribute('aria-hidden', 'true');
-                lbImg.src = '';
-                document.body.style.overflow = '';
-            }
-
-            // delegate clicks on images inside the portfolio grid — ignore images that are inside links
-            document.addEventListener('click', function (e) {
-                const img = e.target.closest('.portfolio-content img, .portfolio-grid img');
-                if (img) {
-                    // if the image is inside an anchor, let the link navigate to the work page
-                    if (img.closest('a')) return;
-                    e.preventDefault();
-                    const src = img.getAttribute('src');
-                    openLightbox(src, img.getAttribute('alt'));
-                }
-            });
-
-            closeBtn.addEventListener('click', closeLightbox);
-            lightbox.addEventListener('click', function(e){
-                if (e.target === lightbox) closeLightbox();
-            });
-            document.addEventListener('keydown', function(e){
-                if (e.key === 'Escape') closeLightbox();
-            });
-        })();
-    </script>
 </body>
 
 </html>
