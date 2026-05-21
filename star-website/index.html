@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="bubbles.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="bubble-canvas" aria-hidden="true"></div>
+
+    <div class="clouds" aria-hidden="true">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+    </div>
+
+    <canvas id="star-trail" aria-hidden="true"></canvas>
+
+    <div class="controls">
+        <div class="shape-picker" id="shape-picker" role="group" aria-label="Cursor shape"></div>
+        <div class="palette" id="palette" role="group" aria-label="Color palette"></div>
+
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+            <span class="theme-icon theme-icon--dark" aria-hidden="true">☀</span>
+            <span class="theme-icon theme-icon--light" aria-hidden="true">☾</span>
+        </button>
+    </div>
+</body>
+</html>
