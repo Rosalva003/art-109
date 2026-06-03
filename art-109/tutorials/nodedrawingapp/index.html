@@ -2,13 +2,74 @@
 <html lang="en">
   <head>
     <script src="libraries/p5.js"></script>
-    <script src="libraries/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Drawing App</title>
   </head>
   <body>
-    <main>
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Creative coding sketch</p>
+        <h1>Node Drawing App</h1>
+        <p>
+          Build a colorful network by placing nodes, dragging them around, and
+          connecting them into shapes, maps, constellations, or diagrams.
+        </p>
+      </section>
+
+      <section class="app-card" aria-label="Interactive node drawing app">
+        <aside class="toolbar">
+          <div>
+            <p class="panel-label">Mode</p>
+            <div class="button-grid" role="group" aria-label="Drawing modes">
+              <button class="mode-button is-active" data-mode="draw" type="button">
+                Add / Move
+              </button>
+              <button class="mode-button" data-mode="connect" type="button">
+                Connect
+              </button>
+              <button class="mode-button" data-mode="erase" type="button">
+                Erase
+              </button>
+            </div>
+          </div>
+
+          <label class="control">
+            <span>Node color</span>
+            <input id="nodeColor" type="color" value="#ff7ab6" />
+          </label>
+
+          <label class="control">
+            <span>Node size</span>
+            <input id="nodeSize" type="range" min="16" max="72" value="34" />
+          </label>
+
+          <div class="button-grid">
+            <button id="clearButton" type="button">Clear</button>
+            <button id="saveButton" type="button">Save PNG</button>
+          </div>
+
+          <div class="stats" aria-live="polite">
+            <span id="nodeCount">0 nodes</span>
+            <span id="edgeCount">0 links</span>
+          </div>
+
+          <ol class="tips">
+            <li>Click empty space to add a node.</li>
+            <li>Drag nodes in Add / Move mode.</li>
+            <li>Use Connect mode, then click two nodes.</li>
+            <li>Use Erase mode to remove a node or link.</li>
+          </ol>
+        </aside>
+
+        <div class="canvas-panel">
+          <div id="canvas-holder" aria-label="Drawing canvas"></div>
+          <p id="statusText" class="status-text">
+            Add / Move mode: click the canvas to add nodes.
+          </p>
+        </div>
+      </section>
     </main>
     <script src="sketch.js"></script>
   </body>
